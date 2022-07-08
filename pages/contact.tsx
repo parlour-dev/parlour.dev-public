@@ -39,9 +39,16 @@ export default function ContactPage() {
             </div>
             {/* Calendly inline widget begin */}
             <Head>
-              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async />
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              />
             </Head>
-            <div className="calendly-inline-widget w-full min-w-[320px] h-[630px]" data-url="https://calendly.com/d/dpc-6pz-926?hide_gdpr_banner=1"></div>
+            <div
+              className="calendly-inline-widget w-full min-w-[320px] h-[630px]"
+              data-url="https://calendly.com/d/dpc-6pz-926?hide_gdpr_banner=1"
+            ></div>
             {/* Calendly inline widget end */}
             {/* <form
               className="flex flex-col w-[90%] bg-white mt-10 rounded-3xl drop-shadow-2xl"
