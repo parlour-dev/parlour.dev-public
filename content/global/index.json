@@ -1,0 +1,25 @@
+{
+  "header": {
+    "icon": {
+      "name": "tina"
+    },
+    "color": "default",
+    "nav": [
+      {
+        "href": "portfolio",
+        "label": "Projects"
+      },
+      {
+        "href": "services",
+        "label": "Services"
+      },
+      {
+        "href": "posts",
+        "label": "Blog"
+      }
+    ]
+  },
+  "footer": {
+    "color": "default"
+  }
+}

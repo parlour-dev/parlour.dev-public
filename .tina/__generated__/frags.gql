@@ -1,0 +1,168 @@
+fragment PostParts on Post {
+  title
+  heroImg
+  excerpt
+  author {
+    ... on Document {
+      id
+    }
+  }
+  date
+  _body
+}
+
+fragment GlobalParts on Global {
+  header {
+    __typename
+    icon {
+      __typename
+      color
+      style
+      name
+    }
+    color
+    nav {
+      __typename
+      href
+      label
+    }
+  }
+  footer {
+    __typename
+    color
+    services {
+      __typename
+      name
+      href
+    }
+  }
+  theme {
+    __typename
+    color
+    font
+    icon
+    darkMode
+  }
+}
+
+fragment AuthorParts on Author {
+  name
+  avatar
+}
+
+fragment PageParts on Page {
+  blocks {
+    __typename
+    ... on PageBlocksHero {
+      text
+      cta {
+        __typename
+        href
+        text
+      }
+      image {
+        __typename
+        src
+        alt
+      }
+    }
+    ... on PageBlocksFeatures {
+      heading
+      items {
+        __typename
+        image
+        title
+        text
+      }
+      color
+    }
+    ... on PageBlocksContent {
+      body
+      color
+    }
+    ... on PageBlocksTestimonial {
+      heading
+      testimonials {
+        __typename
+        name
+        title
+        image
+        reference
+      }
+    }
+    ... on PageBlocksReasons {
+      heading
+      items {
+        __typename
+        image
+        title
+        href
+      }
+    }
+    ... on PageBlocksClientsRoll {
+      items {
+        __typename
+        image
+        alt
+        maxHeight
+      }
+    }
+    ... on PageBlocksContentStack {
+      heading
+      items {
+        __typename
+        image
+        title
+        description
+      }
+    }
+    ... on PageBlocksConsultation {
+      heading
+      text
+      ctatext
+      subscription_type
+    }
+    ... on PageBlocksFaq {
+      heading
+      questions {
+        __typename
+        question
+        answer
+      }
+    }
+    ... on PageBlocksSoftware {
+      heading
+      software {
+        __typename
+        name
+        tagline
+        description
+        image
+        image2
+        from
+        to
+        href
+      }
+    }
+    ... on PageBlocksNewsletter {
+      buttonText
+    }
+    ... on PageBlocksProject {
+      name
+      description
+      casestudy
+      pictures {
+        __typename
+        image
+      }
+    }
+    ... on PageBlocksMinorHero {
+      heading
+      text
+      picture
+    }
+    ... on PageBlocksPadding {
+      height
+    }
+  }
+}

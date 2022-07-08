@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Host
+Host: https://parlour.dev
+
+# Sitemaps
+Sitemap: https://parlour.dev/sitemap.xml

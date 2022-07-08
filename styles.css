@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stroke for the cool headings */
+.stroke {
+  color: white;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
+    rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
+    rgb(0, 0, 0) -0.832294px 1.81859px 0px,
+    rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px,
+    rgb(0, 0, 0) -1.87291px -0.701566px 0px,
+    rgb(0, 0, 0) -1.30729px -1.5136px 0px,
+    rgb(0, 0, 0) -0.421592px -1.95506px 0px,
+    rgb(0, 0, 0) 0.567324px -1.91785px 0px,
+    rgb(0, 0, 0) 1.41734px -1.41108px 0px,
+    rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.indiana-scroll-container {
+  scrollbar-width: none;
+}
+
+.indiana-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.snappingScroll .indiana-scroll-container {
+  scroll-snap-type: x proximity;
+}
+
+.snappingScroll .indiana-scroll-container--dragging {
+  scroll-snap-type: none !important;
+}
+
+.article-content img {
+  border-radius: 30px;
+  align-self: center;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 50%;
+}
+
+::selection {
+  background-color: #1eff8fab;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  margin: 0.5em 0 !important;
+  font-weight: 700;
+}
+
+.prose-lg h1,
+.prose-lg h2,
+.prose-lg h3,
+.prose-lg h4,
+.prose-lg h5,
+.prose-lg h6 {
+  margin: 0.5em 0 !important;
+  font-weight: 700;
+}
+
+.prose-lg p,
+.prose p,
+.prose ul,
+.prose ol,
+.prose li,
+.prose-lg ul,
+.prose-lg ol,
+.prose-lg li {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.prose {
+  color: #2a3036;
+}
+
+.prose-dark {
+  color: white !important;
+}
+
+.children\:transparent * {
+  color: transparent !important;
+}

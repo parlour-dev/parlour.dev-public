@@ -1,0 +1,9 @@
+.git
+.github
+.next
+.tina
+.vscode
+assets
+node_modules
+*.md
+*.mdx
