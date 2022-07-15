@@ -30,7 +30,7 @@ export const Testimonial = ({ data, parentField = "" }) => {
               800: { items: 2 },
               1100: { items: 3 },
             }}
-            infinite={false}
+            infinite
             mouseTracking
             renderPrevButton={() => <></>}
             renderNextButton={() => <></>}
