@@ -52,6 +52,20 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
           }}
           defer
         />
+
+        {/* Clearbit */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function (d, u, h, s) {
+              h = d.getElementsByTagName('head')[0];
+              s = d.createElement('script');
+              s.async = 1;
+              s.src = u + new Date().getTime();
+              h.appendChild(s);
+            })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');`
+          }}
+        />
       </Head>
       <div className={`min-h-screen flex flex-col font-sora`}>
         <Header data={data?.header} />
