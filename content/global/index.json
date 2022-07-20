@@ -16,6 +16,10 @@
       {
         "href": "posts",
         "label": "Blog"
+      },
+      {
+        "href": "parlourCare",
+        "label": "Parlour Care"
       }
     ]
   },
