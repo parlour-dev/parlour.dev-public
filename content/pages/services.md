@@ -33,7 +33,6 @@ blocks:
       # How ECAT transformed eCommerce with NFTs
 
 
-
       Ecat, a leading company in the Polish eCommerce industry, decided to adopt
       blockchain and NFTs into their business model. Their marketplace - Aderlo,
       was a perfect place to test blockchain solutions. That’s how the Aderlo

@@ -9,7 +9,7 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
   return (
     <>
       <Head>
-        <title>Parlour Development</title>
+        <title>Blockchain development // NFT creation // tokenomics // crypto tokens // Parlour Development</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta

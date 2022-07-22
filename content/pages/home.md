@@ -4,62 +4,52 @@ blocks:
       We create <stroke text="blockchain"/> software
     cta:
       href: /contact
-      text: Let's make something great
+      text: Let's create something great!
     image:
       src: >-
         https://res.cloudinary.com/parlour-development/image/upload/v1658483844/newParlour_uugvlw.webp
       alt: Phone with Parlour software
     _template: hero
   - heading: |
-      Why use **blockchain**?
+      What's your **business problem**?
     items:
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1658486773/copypage/accountant_y1wzzd.png
-        title: Get financing
+        title: I need financing
         href: /post/get-funding-startups-crypto
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1658486909/copypage/code-version-control_layuw3.png
-        title: Build community
+        title: I want to build a community
         href: /post/make-more-on-online-courses
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1658486915/copypage/solving-problems_yz2znu.png
-        title: Become innovative
+        title: I want to reach new markets
         href: /post/how-to-use-nfts-in-business
     _template: reasons
-  - items:
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1658483908/image_1_b9kylm.png
-        alt: Aderlo
-        maxHeight: 6rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248130/logos/tofu_za4so2.webp
-        alt: Tofu Media
-        maxHeight: 4.5rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248121/logos/ecat_uuzbik.webp
-        alt: ecat eCommerce
-        maxHeight: 3.5rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248124/logos/planetary_zvt47d.webp
-        alt: Planetary Partyverse
-        maxHeight: 3.7rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1658483969/image_2_xlx1r1.png
-        alt: Avihemp
-        maxHeight: 12rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248127/logos/msg_hr6gud.webp
-        alt: Hemp MSG
-        maxHeight: 4.5rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248118/logos/intermeta_xsu8pt.webp
-        alt: intermeta
-        maxHeight: 4rem
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656248115/logos/mindset_lj5zd1.webp
-        alt: Mindset
-        maxHeight: 4.8rem
-    _template: clientsRoll
+  - body: >
+      # Blockchain can be used as an innovative way to solve ever-known business
+      issues.
+
+
+      Blockchain technology can help you solve various business issues. Getting
+      financing for your business can be very difficult at times using
+      traditional methods. Launching your own token or NFT collection can enable
+      you to get the capital you need as well as share your venture with a
+      community of blockchain enthusiasts from all over the world.
+
+
+      Creating NFTs can create a long-lasting bond between you and your customer
+      base. Providing your non-fungible tokens with utility will grant you
+      customer loyalty and high return rate.
+
+
+      By definition, blockchain is a global endeavour without borders. Use it to
+      make your business global and reach new audience. The possibilities are
+      endless!
+    color: ''
+    _template: content
+  - height: 4rem
+    _template: padding
   - heading: |
       # Launch **anything**
     items:
@@ -156,6 +146,48 @@ blocks:
           assigning you a Project Patron, who can answer all your questions down
           the road.
     _template: contentStack
+  - heading: |
+      # **Learn how your business could benefit from using blockchain**
+    text: >
+      Book a 15-minute call to discover the benefits of using blockchain
+      technology and become a pioneer in your industry!
+    ctatext: Book now
+    subscription_type: consultation
+    _template: consultation
+  - items:
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1658483908/image_1_b9kylm.png
+        alt: Aderlo
+        maxHeight: 6rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248130/logos/tofu_za4so2.webp
+        alt: Tofu Media
+        maxHeight: 4.5rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248121/logos/ecat_uuzbik.webp
+        alt: ecat eCommerce
+        maxHeight: 3.5rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248124/logos/planetary_zvt47d.webp
+        alt: Planetary Partyverse
+        maxHeight: 3.7rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1658483969/image_2_xlx1r1.png
+        alt: Avihemp
+        maxHeight: 12rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248127/logos/msg_hr6gud.webp
+        alt: Hemp MSG
+        maxHeight: 4.5rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248118/logos/intermeta_xsu8pt.webp
+        alt: intermeta
+        maxHeight: 4rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656248115/logos/mindset_lj5zd1.webp
+        alt: Mindset
+        maxHeight: 4.8rem
+    _template: clientsRoll
   - heading: |
       # Software **we built**
     software:

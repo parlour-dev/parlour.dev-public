@@ -7,10 +7,19 @@ import type { TinaTemplate } from "tinacms";
 import Link from "next/link";
 import ReactGA from "react-ga4";
 import Image from "next/image";
+import { useRef } from "react";
+import { IoArrowDown } from "react-icons/io5";
 
 const Stroke = ({ text }) => <span className="stroke"> {text}</span>;
 
 export const Hero = ({ data, parentField }) => {
+  // Smooth scrolling
+  const ref = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Section className="w-full h-auto">
       <Container className="3xl:mx-auto flex flex-col overflow-hidden items-center lg:flex-row w-full bg-white rounded-b-3xl">
@@ -23,22 +32,31 @@ export const Hero = ({ data, parentField }) => {
             ></TinaMarkdown>
           </div>
           {data?.cta && (
-            <Link href={data.cta.href || "/"}>
+            <Link href={data.cta.href || "#test"}>
               <a className="flex justify-center items-center">
                 <button
                   className="hover:scale-95 transition duration-300 w-full sm:w-10/12 shadow-lg shadow-neutral-200 lg:w-auto mt-12 sm:mt-20 bg-gradient-to-r from-parlourBlue to-parlourGreen text-white py-6 px-6 sm:px-10 font-bold text-lg rounded-tl-[2rem] rounded-br-[2rem]"
-                  onClick={() =>
+                  onClick={() => {
                     ReactGA.event({
                       category: "Contact",
                       action: "HomeContact",
-                    })
-                  }
+                    });
+                    handleClick();
+                  }}
                 >
                   {data.cta.text}
                 </button>
               </a>
             </Link>
           )}
+          <hr className="mt-10 w-8/12 h-[2px] bg-parlourDark" />
+          <span className="flex flex-row justify-center items-center">
+            {" "}
+            <p className="mt-2 mr-2 text-md">
+              Scroll down to see why you should care
+            </p>
+            <IoArrowDown size={24} />
+          </span>
         </div>
         {data.image && (
           <div className="order-first sm:order-last lg:w-6/12 flex justify-end overflow-hidden ml-[18%] lg:ml-auto">

@@ -24,8 +24,8 @@ export default function ContactPage() {
     <Layout>
       <Section className="flex-1 mt-4">
         <Container size="large" className="!max-w-3xl">
-          <div className="bg-white rounded-2xl drop-shadow-sm flex flex-col items-center">
-            <h1 className="text-lg text-left w-full sm:text-xl md:text-2xl p-6 font-bold">
+          <div className="bg-white rounded-2xl drop-shadow-xl p-6 flex flex-col items-center">
+            <h1 className="text-lg text-left w-full sm:text-xl md:text-2xl py-2 font-bold">
               Contact us
             </h1>
             <div className="p-6 sm:p-0 mt-10 mx-auto">

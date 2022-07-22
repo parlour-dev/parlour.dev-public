@@ -129,6 +129,7 @@ module.exports = {
               backgroundColor: theme("colors.gray.100"),
               lineHeight: 1.5,
             },
+
             code: {
               backgroundColor: theme("colors.gray.100"),
               padding: "0.25rem",
