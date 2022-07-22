@@ -8,11 +8,8 @@ import { MdSectionHeading } from "../util/mdSectionHeading";
 import { Section } from "../util/section";
 
 export const Reasons = ({ data, parentField }) => {
-
-  const ref = useRef<HTMLDivElement>(null);
-  
   return (
-    <Section ref={ref} className="py-24">
+    <Section className="py-24">
       <MdSectionHeading data={data.heading} />
       <Container
         className={`flex flex-row flex-wrap sm:gap-1 lg:gap-6 text-left items-center justify-center`}

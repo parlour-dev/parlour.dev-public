@@ -13,13 +13,6 @@ import { IoArrowDown } from "react-icons/io5";
 const Stroke = ({ text }) => <span className="stroke"> {text}</span>;
 
 export const Hero = ({ data, parentField }) => {
-  // Smooth scrolling
-  const ref = useRef<HTMLDivElement>(null);
-
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <Section className="w-full h-auto">
       <Container className="3xl:mx-auto flex flex-col overflow-hidden items-center lg:flex-row w-full bg-white rounded-b-3xl">
@@ -41,7 +34,6 @@ export const Hero = ({ data, parentField }) => {
                       category: "Contact",
                       action: "HomeContact",
                     });
-                    handleClick();
                   }}
                 >
                   {data.cta.text}
