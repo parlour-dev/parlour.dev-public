@@ -31,10 +31,10 @@ const Reason = ({ data }) => (
       scroll={data.href !== "#" && data.href !== "/"}
     >
       <a
-        className="relative flex flex-col justify-end m-1 sm:m-2 rounded-[30px] overflow-hidden"
+        className="hover:scale-90 duration-300 transition relative flex flex-col justify-end m-1 sm:m-2 rounded-[30px] overflow-hidden"
         style={{ aspectRatio: "1" }}
       >
-        <div className="p-4 sm:p-6 bg-gradient-to-t from-parlourDark to-transparent rounded-[30px] w-full h-2/3 flex flex-col justify-end">
+        <div className="p-4 sm:p-6 bg-gradient-to-t from-parlourDark/60 to-parlourGreen/10 rounded-[30px] w-full h-full flex flex-col justify-end">
           {data.title && (
             <h2 className="text-white font-bold text-md sm:text-lg lg:text-xl leading-none">
               {data.title}

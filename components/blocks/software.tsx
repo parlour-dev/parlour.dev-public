@@ -31,7 +31,7 @@ const PieceOfSoftware = ({ data }) => {
       <ThirdContainer>
         <Item
           type="bg"
-          className="h-1/3 p-[0.18rem] md:p-1 rounded-[32px]"
+          className="h-1/3 p-[0.18rem] md:p-1 rounded-[34px]"
           {...gradient}
         >
           <Item
@@ -43,7 +43,7 @@ const PieceOfSoftware = ({ data }) => {
                 className="font-bold text-2xl lg:text-4xl text-white w-full text-center"
                 style={{
                   WebkitTextStrokeColor: "transparent",
-                  WebkitTextStrokeWidth: "6px",
+                  WebkitTextStrokeWidth: "5px",
                 }}
                 {...gradient}
               >
@@ -81,7 +81,7 @@ const PieceOfSoftware = ({ data }) => {
         </Item>
         <Item
           type="bg"
-          className="min-h-1/3 p-[0.18rem] md:p-1 !rounded-[32px]"
+          className="hover:scale-95 duration-300 transition min-h-1/3 p-[0.18rem] md:p-1 !rounded-[33.5px]"
           {...gradient}
         >
           <Item

@@ -7,26 +7,30 @@ blocks:
       text: Let's make something great
     image:
       src: >-
-        https://res.cloudinary.com/parlour-development/image/upload/v1655769518/iphoneMockup_ann0yt.webp
+        https://res.cloudinary.com/parlour-development/image/upload/v1658483844/newParlour_uugvlw.webp
       alt: Phone with Parlour software
     _template: hero
   - heading: |
       Why use **blockchain**?
     items:
       - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656273305/copypage/best_price_preview_qqdona.webp
+          https://res.cloudinary.com/parlour-development/image/upload/v1658486773/copypage/accountant_y1wzzd.png
         title: Get financing
         href: /post/get-funding-startups-crypto
       - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656273305/copypage/Special_price_preview_sryzxc.webp
+          https://res.cloudinary.com/parlour-development/image/upload/v1658486909/copypage/code-version-control_layuw3.png
         title: Build community
         href: /post/make-more-on-online-courses
       - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656273305/copypage/repair_insurance_preview_ookthm.webp
+          https://res.cloudinary.com/parlour-development/image/upload/v1658486915/copypage/solving-problems_yz2znu.png
         title: Become innovative
         href: /post/how-to-use-nfts-in-business
     _template: reasons
   - items:
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1658483908/image_1_b9kylm.png
+        alt: Aderlo
+        maxHeight: 6rem
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1656248130/logos/tofu_za4so2.webp
         alt: Tofu Media
@@ -39,6 +43,10 @@ blocks:
           https://res.cloudinary.com/parlour-development/image/upload/v1656248124/logos/planetary_zvt47d.webp
         alt: Planetary Partyverse
         maxHeight: 3.7rem
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1658483969/image_2_xlx1r1.png
+        alt: Avihemp
+        maxHeight: 12rem
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1656248127/logos/msg_hr6gud.webp
         alt: Hemp MSG
