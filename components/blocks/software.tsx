@@ -21,10 +21,12 @@ export const Software = ({ data, parentField = "" }) => {
   );
 };
 
+
 const PieceOfSoftware = ({ data }) => {
   const gradient = { from: data.from || "black", to: data.to || "white" };
 
   const isDesktop = useMediaQuery("(min-width: 1024px");
+
 
   return (
     <div className="flex flex-col max-w-lg md:max-w-none md:flex-row gap-4 lg:gap-8 items-stretch justify-between mb-4 lg:mb-8 last:mb-0">
@@ -79,20 +81,24 @@ const PieceOfSoftware = ({ data }) => {
         >
           <TinaMarkdown content={data.description} />
         </Item>
-        <Item
-          type="bg"
-          className="hover:scale-95 duration-300 transition min-h-1/3 p-[0.18rem] md:p-1 !rounded-[33.5px]"
-          {...gradient}
-        >
+        <Link href={data.href}>
+          <a target="_blank" referrerPolicy="no-referrer">
           <Item
-            type="text"
-            className="h-full bg-white flex items-center justify-center"
+            type="bg"
+            className="hover:scale-95 duration-300 transition min-h-1/3 p-[0.18rem] md:p-1 !rounded-[33.5px]"
+            {...gradient}
           >
-            <TextGradient href={data.href} className="text-xl" {...gradient}>
-              Browse code
-            </TextGradient>
+            <Item
+              type="text"
+              className="h-full bg-white flex items-center justify-center"
+            >
+              <TextGradient className="text-xl" {...gradient}>
+                Browse code
+              </TextGradient>
+            </Item>
           </Item>
-        </Item>
+          </a>
+        </Link>
       </ThirdContainer>
       <ThirdContainer>
         <Item className="relative overflow-hidden md:h-3/5 h-64">
