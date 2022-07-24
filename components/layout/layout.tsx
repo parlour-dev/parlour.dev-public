@@ -9,7 +9,10 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
   return (
     <>
       <Head>
-        <title>Blockchain development // NFT creation // tokenomics // crypto tokens // Parlour Development</title>
+        <title>
+          Blockchain development // NFT creation // tokenomics // crypto tokens
+          // Parlour Development
+        </title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
@@ -59,11 +62,11 @@ export const Layout = ({ rawData = {}, data = layoutData, children }) => {
           dangerouslySetInnerHTML={{
             __html: `(function (d, u, h, s) {
               h = d.getElementsByTagName('head')[0];
-              s = d.createElement('script');
+              s = d.createElement('script');      
               s.async = 1;
               s.src = u + new Date().getTime();
               h.appendChild(s);
-            })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');`
+            })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');`,
           }}
         />
       </Head>

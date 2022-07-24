@@ -234,6 +234,7 @@ type PageBlocksReasonsItems {
 
 type PageBlocksReasons {
   heading: JSON
+  monochrome: Boolean
   items: [PageBlocksReasonsItems]
 }
 
@@ -310,6 +311,7 @@ type PageBlocksMinorHero {
   heading: JSON
   text: JSON
   picture: String
+  compact: Boolean
 }
 
 type PageBlocksPadding {
@@ -465,6 +467,7 @@ input PageBlocksReasonsItemsMutation {
 
 input PageBlocksReasonsMutation {
   heading: JSON
+  monochrome: Boolean
   items: [PageBlocksReasonsItemsMutation]
 }
 
@@ -541,6 +544,7 @@ input PageBlocksMinorHeroMutation {
   heading: JSON
   text: JSON
   picture: String
+  compact: Boolean
 }
 
 input PageBlocksPaddingMutation {

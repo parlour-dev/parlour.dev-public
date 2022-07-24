@@ -17,21 +17,28 @@ export const Reasons = ({ data, parentField }) => {
       >
         {data.items &&
           data.items.map(function (block: any, i: Key) {
-            return <Reason key={i} data={block} />;
+            return (
+              <Reason
+                key={i}
+                data={block}
+                monochrome={data?.monochrome || false}
+              />
+            );
           })}
       </Container>
     </Section>
   );
 };
 
-const Reason = ({ data }) => (
+const Reason = ({ data, monochrome }) => (
   <div className="w-[49%] md:w-[30%] xl:w-1/4 min-w-[10rem]">
     <Link
       href={data.href || "#"}
       scroll={data.href !== "#" && data.href !== "/"}
     >
       <a
-        className="hover:scale-90 duration-300 transition relative flex flex-col justify-end m-1 sm:m-2 rounded-[30px] overflow-hidden"
+        className={`hover:scale-90 duration-300 transition relative flex flex-col justify-end m-1 sm:m-2 rounded-[30px] overflow-hidden\
+        ${monochrome && "grayscale"} hover:grayscale-0`}
         style={{ aspectRatio: "1" }}
       >
         <div className="p-4 sm:p-6 bg-gradient-to-t from-parlourDark/60 to-parlourGreen/10 rounded-[30px] w-full h-full flex flex-col justify-end">
@@ -47,7 +54,7 @@ const Reason = ({ data }) => (
             alt=""
             layout="fill"
             objectFit="cover"
-            className="-z-1"
+            className={`-z-1`}
           />
         )}
       </a>
@@ -93,6 +100,11 @@ export const reasonsBlockSchema: TinaTemplate = {
       type: "rich-text",
       label: "Heading",
       name: "heading",
+    },
+    {
+      type: "boolean",
+      label: "Monochrome images",
+      name: "monochrome",
     },
     {
       type: "object",
