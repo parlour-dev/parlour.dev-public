@@ -166,6 +166,8 @@ fragment PageParts on Page {
       text
       picture
       compact
+      from
+      to
     }
     ... on PageBlocksPadding {
       height

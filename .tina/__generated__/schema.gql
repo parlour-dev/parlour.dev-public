@@ -316,6 +316,8 @@ type PageBlocksMinorHero {
   text: JSON
   picture: String
   compact: Boolean
+  from: String
+  to: String
 }
 
 type PageBlocksPadding {
@@ -553,6 +555,8 @@ input PageBlocksMinorHeroMutation {
   text: JSON
   picture: String
   compact: Boolean
+  from: String
+  to: String
 }
 
 input PageBlocksPaddingMutation {

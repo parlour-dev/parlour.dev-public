@@ -32,6 +32,8 @@ blocks:
     picture: >-
       https://res.cloudinary.com/parlour-development/image/upload/v1657274834/f76dfc603339ed30cd292dbf9e2a721c_p5cxat.webp
     compact: true
+    from: '#7102FF'
+    to: '#FF00B8'
     _template: minorHero
   - body: >
       # How ECAT transformed eCommerce with NFTs
@@ -62,6 +64,8 @@ blocks:
     picture: >-
       https://res.cloudinary.com/parlour-development/image/upload/v1657275125/ae557c6016257e4af02032e3330a509c_wrjjnb.webp
     compact: true
+    from: '#FF7C02'
+    to: '#FFE600'
     _template: minorHero
   - body: >
       # A tokenized building in Dubai
@@ -93,6 +97,8 @@ blocks:
     picture: >-
       https://res.cloudinary.com/parlour-development/image/upload/v1657279991/e0d2d9d0864af3619bac2fd8e4ada562_ltwjnt.webp
     compact: true
+    from: '#02D1FF'
+    to: '#0038FF'
     _template: minorHero
   - body: >
       # Subscription model, but better
