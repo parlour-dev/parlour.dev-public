@@ -161,6 +161,7 @@ fragment PageParts on Page {
       heading
       text
       picture
+      compact
     }
     ... on PageBlocksPadding {
       height

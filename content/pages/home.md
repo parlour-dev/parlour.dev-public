@@ -48,8 +48,6 @@ blocks:
       endless!
     color: ''
     _template: content
-  - height: 4rem
-    _template: padding
   - heading: |
       # Launch **anything**
     items:
@@ -116,44 +114,6 @@ blocks:
           but a great pleasure. This young, open-minded team delivered my
           project on time and guided me through each step of the process.&#x20;
     _template: testimonial
-  - heading: |
-      # Want to work **with us**?
-    items:
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/pasted_image_0_9_bl6z5n.webp
-        title: Discovery call
-        description: >
-          During the Discovery Call, we get to know each other. You describe
-          your problem, we answer all your questions while telling you what we
-          can do in order to overcome your obstacle. Of course, the Discovery
-          Call is 100% free and scheduled for a time which is convenient for
-          you.
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/28837307_ftxfcd.webp
-        title: Solution proposition
-        description: >
-          After investigating your problem and coming up with potential
-          solutions, we send you an individually tailored offer. In the offer,
-          we identify your essential needs and how we can satisfy them. We
-          describe all the processes we will employ while delivering your
-          project.
-      - image: >-
-          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/10585989_ywfddg.webp
-        title: Starting your project
-        description: >
-          Parlour starts working on your project the second we’ve come to an
-          agreement. We give you 24/7 access to the work being done while
-          assigning you a Project Patron, who can answer all your questions down
-          the road.
-    _template: contentStack
-  - heading: |
-      # **Learn how your business could benefit from using blockchain**
-    text: >
-      Book a 15-minute call to discover the benefits of using blockchain
-      technology and become a pioneer in your industry!
-    ctatext: Book now
-    subscription_type: consultation
-    _template: consultation
   - items:
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1658483908/image_1_b9kylm.png
@@ -188,6 +148,38 @@ blocks:
         alt: Mindset
         maxHeight: 4.8rem
     _template: clientsRoll
+  - heading: |
+      # Want to work **with us**?
+    items:
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/pasted_image_0_9_bl6z5n.webp
+        title: Discovery call
+        description: >
+          During the Discovery Call, we get to know each other. You describe
+          your problem, we answer all your questions while telling you what we
+          can do in order to overcome your obstacle. Of course, the Discovery
+          Call is 100% free and scheduled for a time which is convenient for
+          you.
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/28837307_ftxfcd.webp
+        title: Solution proposition
+        description: >
+          After investigating your problem and coming up with potential
+          solutions, we send you an individually tailored offer. In the offer,
+          we identify your essential needs and how we can satisfy them. We
+          describe all the processes we will employ while delivering your
+          project.
+      - image: >-
+          https://res.cloudinary.com/parlour-development/image/upload/v1656187970/copypage/10585989_ywfddg.webp
+        title: Starting your project
+        description: >
+          Parlour starts working on your project the second we’ve come to an
+          agreement. We give you 24/7 access to the work being done while
+          assigning you a Project Patron, who can answer all your questions down
+          the road.
+    _template: contentStack
+  - buttonText: Notify Me
+    _template: newsletter
   - heading: |
       # Software **we built**
     software:
@@ -228,8 +220,6 @@ blocks:
         to: '#FBC918'
         href: 'https://github.com/parlour-dev/pukpuk-public'
     _template: software
-  - buttonText: Notify Me
-    _template: newsletter
   - heading: |
       # **Industries** we work with
     monochrome: true

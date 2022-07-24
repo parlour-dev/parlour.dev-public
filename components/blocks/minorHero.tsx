@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const MinorHero = ({ data }) => {
   return (
-    <Section className="py-24">
+    <Section className={data?.compact ? "py-12" : "py-24"}>
       <Container className="!max-w-6xl" size="custom">
         <div className="flex flex-col relative leading-snug w-full">
           <div className="min-h-[30rem] w-full md:w-9/12 py-6 md:py-24 px-6 md:pl-12 md:pr-[25%] bg-parlourDark flex flex-col justify-end items-center rounded-[37px]">
@@ -41,6 +41,11 @@ export const MinorHero = ({ data }) => {
 export const minorHeroBlockSchema: TinaTemplate = {
   name: "minorHero",
   label: "Minor Hero",
+  ui: {
+    itemProps: (item) => ({
+      label: `Minor hero ${item.compact ? " (compact)" : ""}`,
+    }),
+  },
   fields: [
     {
       type: "rich-text",
@@ -56,6 +61,11 @@ export const minorHeroBlockSchema: TinaTemplate = {
       type: "image",
       label: "Picture",
       name: "picture",
+    },
+    {
+      type: "boolean",
+      label: "Compact (smaller vertical padding)",
+      name: "compact",
     },
   ],
 };
