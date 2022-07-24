@@ -12,12 +12,11 @@ import {
 } from "./software";
 
 export const Project = ({ data }) => {
-  // const gradient = { to: "#182FFB", from: "#E02EFD" };
   const gradient = { to: data.to || "black", from: data.from || "white" }
   return (
     <Section className="py-24">
-      <Container className="flex flex-row gap-8 items-stretch justify-between">
-        <div className="h-full min-h-[30rem] w-[70%] flex flex-row items-center justify-center">
+      <Container className="flex flex-col lg:flex-row gap-8 items-stretch justify-between">
+        <div className="h-full min-h-[30rem] w-full lg:w-[70%] flex flex-row items-center justify-center">
           {data.pictures && (
             <AliceCarousel infinite={false} mouseTracking>
               {data.pictures?.map((block, i) => (
@@ -58,7 +57,7 @@ export const Project = ({ data }) => {
         <h1 className="text-xl font-bold">What did we build?</h1>
 
         <div className="flex flex-col gap-8 items-stretch justify-between">
-          <div className="flex flex-row gap-8 items-stretch justify-between min-h-[10rem]">
+          <div className="flex flex-col lg:flex-row gap-8 items-stretch justify-between min-h-[10rem]">
             <SoftwareItem
               type="text"
               className="bg-parlourDark text-white prose-lg"
@@ -69,7 +68,7 @@ export const Project = ({ data }) => {
             <SoftwareItem
               type="text"
               className="bg-parlourDark text-white h-fit w-fit"
-              style={{ aspectRatio: "1" }}
+              // style={{ aspectRatio: "1" }}
               basis="25%"
             >
               <TextGradient
@@ -85,12 +84,12 @@ export const Project = ({ data }) => {
           <div className="flex flex-row gap-8 items-stretch justify-between min-h-[8rem] w-full">
             <SoftwareItem
               type="bg"
-              className="!bg-parlourDark text-base lg:text-lg"
+              className="!bg-parlourDark"
               basis="50%"
             >
               <SoftwareItem
                 type="text"
-                className="bg-white h-full w-full leading-tight"
+                className="bg-white h-full w-full leading-tight text-sm md:text-base lg:text-lg"
               >
                 <p>Seems interesting?</p>
                 <p>Check out</p>
@@ -106,7 +105,7 @@ export const Project = ({ data }) => {
                 className="bg-white h-full w-full"
                 center
               >
-                <TextGradient className="text-xl lg:text-2xl" {...gradient}>
+                <TextGradient className="text-lg md:text-xl lg:text-2xl" {...gradient}>
                   Case study
                 </TextGradient>
               </SoftwareItem>
