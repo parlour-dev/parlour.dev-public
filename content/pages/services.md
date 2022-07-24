@@ -7,7 +7,7 @@ blocks:
     text: |
       See which industries made the decision to go the blockchain way
     picture: >-
-      https://res.cloudinary.com/parlour-development/image/upload/v1655747938/cld-sample-3.webp
+      https://res.cloudinary.com/parlour-development/image/upload/v1658645466/industries/Illustrator-Vector-Illustration-1_anoe9x.webp
     _template: minorHero
   - body: >
       # Blockchain isn't just for IT companies
@@ -27,7 +27,7 @@ blocks:
     text: |
       The perfect place to implement peer-to-peer blockchain transactions
     picture: >-
-      https://res.cloudinary.com/parlour-development/image/upload/v1657274834/f76dfc603339ed30cd292dbf9e2a721c_p5cxat.png
+      https://res.cloudinary.com/parlour-development/image/upload/v1657274834/f76dfc603339ed30cd292dbf9e2a721c_p5cxat.webp
     _template: minorHero
   - body: >
       # How ECAT transformed eCommerce with NFTs
@@ -56,7 +56,7 @@ blocks:
     text: |
       The new generation of real estate investing
     picture: >-
-      https://res.cloudinary.com/parlour-development/image/upload/v1657275125/ae557c6016257e4af02032e3330a509c_wrjjnb.png
+      https://res.cloudinary.com/parlour-development/image/upload/v1657275125/ae557c6016257e4af02032e3330a509c_wrjjnb.webp
     _template: minorHero
   - body: >
       # A tokenized building in Dubai
@@ -86,7 +86,7 @@ blocks:
     text: |
       Using blockchain solutions to create better and more engaging products
     picture: >-
-      https://res.cloudinary.com/parlour-development/image/upload/v1657279991/e0d2d9d0864af3619bac2fd8e4ada562_ltwjnt.png
+      https://res.cloudinary.com/parlour-development/image/upload/v1657279991/e0d2d9d0864af3619bac2fd8e4ada562_ltwjnt.webp
     _template: minorHero
   - body: >
       # Subscription model, but better
