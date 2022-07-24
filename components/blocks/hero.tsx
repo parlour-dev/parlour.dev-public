@@ -42,9 +42,9 @@ export const Hero = ({ data, parentField }) => {
             </Link>
           )}
           <hr className="mt-10 w-8/12 h-[2px] bg-parlourDark" />
-          <span className="flex flex-row justify-center items-center">
+          <span className="flex flex-row justify-center items-center mt-2">
             {" "}
-            <p className="mt-2 mr-2 text-md">
+            <p className="mr-2 text-md">
               Scroll down to see why you should care
             </p>
             <IoArrowDown size={24} />

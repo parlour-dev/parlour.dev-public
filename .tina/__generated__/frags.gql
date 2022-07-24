@@ -92,6 +92,7 @@ fragment PageParts on Page {
     }
     ... on PageBlocksReasons {
       heading
+      monochrome
       items {
         __typename
         image

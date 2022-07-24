@@ -234,6 +234,7 @@ type PageBlocksReasonsItems {
 
 type PageBlocksReasons {
   heading: JSON
+  monochrome: Boolean
   items: [PageBlocksReasonsItems]
 }
 
@@ -465,6 +466,7 @@ input PageBlocksReasonsItemsMutation {
 
 input PageBlocksReasonsMutation {
   heading: JSON
+  monochrome: Boolean
   items: [PageBlocksReasonsItemsMutation]
 }
 

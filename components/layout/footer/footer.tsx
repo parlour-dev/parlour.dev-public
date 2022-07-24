@@ -5,7 +5,13 @@ import { AiFillInstagram } from "react-icons/ai";
 import { Container } from "../../util/container";
 import { Icon } from "../../util/icon";
 
-import { IoBriefcase, IoCall, IoMail, IoPhonePortrait, IoPhonePortraitOutline } from "react-icons/io5";
+import {
+  IoBriefcase,
+  IoCall,
+  IoMail,
+  IoPhonePortrait,
+  IoPhonePortraitOutline,
+} from "react-icons/io5";
 
 export const Footer = ({ data, icon, rawData }) => {
   return (
@@ -21,10 +27,12 @@ export const Footer = ({ data, icon, rawData }) => {
             Direct <b>contact</b>
           </p>
           <span className="mt-6 text-lg flex flex-row justify-center items-center gap-4">
-            <IoMail /><p>contact@parlour.dev</p>
+            <IoMail />
+            <p>contact@parlour.dev</p>
           </span>
           <span className="mt-6 mb-12 text-lg flex flex-row justify-center items-center gap-4">
-            <IoPhonePortrait /><p>+48 511 610 544</p>
+            <IoPhonePortrait />
+            <p>+48 511 610 544</p>
           </span>
         </div>
 
@@ -37,11 +45,11 @@ export const Footer = ({ data, icon, rawData }) => {
               alt="Parlour Development Logo"
             />
             <div className="mt-2 flex flex-row items-center">
-            <IoMail />
+              <IoMail />
               <p className="ml-2">contact@parlour.dev</p>
             </div>
             <div className="mt-2 flex flex-row items-center">
-             <IoBriefcase />
+              <IoBriefcase />
               <p className="ml-2">Parlour Development LLC</p>
             </div>
             <p className="ml-8 mb-2 text-left">

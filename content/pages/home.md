@@ -232,6 +232,7 @@ blocks:
     _template: newsletter
   - heading: |
       # **Industries** we work with
+    monochrome: true
     items:
       - image: >-
           https://res.cloudinary.com/parlour-development/image/upload/v1656272328/industries/ecommerce_afozaj.webp
