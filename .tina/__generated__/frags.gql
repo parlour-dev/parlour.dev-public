@@ -158,6 +158,8 @@ fragment PageParts on Page {
         __typename
         image
       }
+      from
+      to
     }
     ... on PageBlocksMinorHero {
       heading

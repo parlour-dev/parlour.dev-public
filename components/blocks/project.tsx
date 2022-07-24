@@ -12,7 +12,8 @@ import {
 } from "./software";
 
 export const Project = ({ data }) => {
-  const gradient = { to: "#182FFB", from: "#E02EFD" };
+  // const gradient = { to: "#182FFB", from: "#E02EFD" };
+  const gradient = { to: data.to || "black", from: data.from || "white" }
   return (
     <Section className="py-24">
       <Container className="flex flex-row gap-8 items-stretch justify-between">
@@ -84,7 +85,7 @@ export const Project = ({ data }) => {
           <div className="flex flex-row gap-8 items-stretch justify-between min-h-[8rem] w-full">
             <SoftwareItem
               type="bg"
-              className="!bg-parlourDark text-lg lg:text-xl"
+              className="!bg-parlourDark text-base lg:text-lg"
               basis="50%"
             >
               <SoftwareItem
@@ -134,6 +135,11 @@ const Picture = ({ src, className = "" }) => (
 export const projectBlockSchema: TinaTemplate = {
   name: "project",
   label: "Single Project",
+  ui: {
+    itemProps: (item) => ({
+      label: item.name ? `Project: ${item.name}` : "Project",
+    }),
+  },
   fields: [
     {
       name: "name",
@@ -172,6 +178,16 @@ export const projectBlockSchema: TinaTemplate = {
           label: "Image",
         },
       ],
+    },
+    {
+      type: "string",
+      name: "from",
+      label: "Gradient: from color",
+    },
+    {
+      type: "string",
+      name: "to",
+      label: "Gradient: to color",
     },
   ],
 };
