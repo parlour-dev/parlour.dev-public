@@ -302,8 +302,10 @@ type PageBlocksProjectPictures {
 
 type PageBlocksProject {
   name: String
+  tagline: String
   description: JSON
-  casestudy: JSON
+  built: JSON
+  stack: String
   pictures: [PageBlocksProjectPictures]
 }
 
@@ -535,8 +537,10 @@ input PageBlocksProjectPicturesMutation {
 
 input PageBlocksProjectMutation {
   name: String
+  tagline: String
   description: JSON
-  casestudy: JSON
+  built: JSON
+  stack: String
   pictures: [PageBlocksProjectPicturesMutation]
 }
 

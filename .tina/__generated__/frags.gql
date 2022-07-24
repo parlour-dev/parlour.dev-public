@@ -150,8 +150,10 @@ fragment PageParts on Page {
     }
     ... on PageBlocksProject {
       name
+      tagline
       description
-      casestudy
+      built
+      stack
       pictures {
         __typename
         image

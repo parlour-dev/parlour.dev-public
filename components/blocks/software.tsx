@@ -24,43 +24,15 @@ export const Software = ({ data, parentField = "" }) => {
 const PieceOfSoftware = ({ data }) => {
   const gradient = { from: data.from || "black", to: data.to || "white" };
 
-  const isDesktop = useMediaQuery("(min-width: 1024px");
-
   return (
     <div className="flex flex-col max-w-lg md:max-w-none md:flex-row gap-4 lg:gap-8 items-stretch justify-between mb-4 lg:mb-8 last:mb-0">
       <ThirdContainer>
-        <Item
-          type="bg"
-          className="h-1/3 p-[0.18rem] md:p-1 rounded-[34px]"
-          {...gradient}
-        >
+        <Item type="bg" className="h-1/3 rounded-[34px]" {...gradient}>
           <Item
             type="text"
             className="h-full bg-white flex items-center justify-center"
           >
-            {isDesktop ? (
-              <TextGradient
-                className="font-bold text-2xl lg:text-4xl text-white w-full text-center"
-                style={{
-                  WebkitTextStrokeColor: "transparent",
-                  WebkitTextStrokeWidth: "5px",
-                }}
-                {...gradient}
-              >
-                {data.name}
-              </TextGradient>
-            ) : (
-              <TextGradient
-                className="font-bold text-2xl lg:text-4xl text-white w-full text-center"
-                style={{
-                  WebkitTextStrokeColor: "transparent",
-                  WebkitTextStrokeWidth: "4px",
-                }}
-                {...gradient}
-              >
-                {data.name}
-              </TextGradient>
-            )}
+            <StrokedText {...gradient}>{data.name}</StrokedText>
           </Item>
         </Item>
         <Item
@@ -81,7 +53,7 @@ const PieceOfSoftware = ({ data }) => {
         </Item>
         <Item
           type="bg"
-          className="hover:scale-95 duration-300 transition min-h-1/3 p-[0.18rem] md:p-1 !rounded-[33.5px]"
+          className="hover:scale-95 duration-300 transition min-h-1/3 !rounded-[33.5px]"
           {...gradient}
         >
           <Item
@@ -110,7 +82,25 @@ const PieceOfSoftware = ({ data }) => {
   );
 };
 
-const ThirdContainer = ({ children, className = "" }) => {
+export const StrokedText = ({ from = "", to = "", children }) => {
+  const isDesktop = useMediaQuery("(min-width: 1024px");
+
+  return (
+    <TextGradient
+      className="font-bold text-2xl lg:text-4xl text-white w-full text-center"
+      style={{
+        WebkitTextStrokeColor: "transparent",
+        WebkitTextStrokeWidth: isDesktop ? "5px" : "4px",
+      }}
+      from={from}
+      to={to}
+    >
+      {children}
+    </TextGradient>
+  );
+};
+
+export const ThirdContainer = ({ children, className = "" }) => {
   return (
     <div
       className={`${className} flex flex-col justify-between items-stretch gap-4 lg:gap-8`}
@@ -121,21 +111,35 @@ const ThirdContainer = ({ children, className = "" }) => {
   );
 };
 
-const Item = ({ children, className = "", type = "", from = "", to = "" }) => (
+const Item = ({
+  children,
+  className = "",
+  type = "",
+  from = "",
+  to = "",
+  center = false,
+  basis = undefined,
+  style = {}
+}) => (
   <div
-    className={`rounded-[30px] ${className} ${
-      type === "text" && "p-5"
-    } shadow-lg`}
+    className={`rounded-[30px] ${className}\
+    ${type === "text" && "p-5"}\
+    ${type === "bg" && "p-[0.18rem] md:p-1"}\
+    shadow-lg\
+    ${center ? "flex flex-col items-center justify-center" : ""}`}
     style={{
       background:
         type === "bg" && `linear-gradient(to bottom right, ${from}, ${to})`,
+      flexBasis: basis,
+      ...style
     }}
   >
     {children}
   </div>
 );
+export const SoftwareItem = Item;
 
-const TextGradient = ({
+export const TextGradient = ({
   children,
   className = "",
   style = {},
@@ -149,7 +153,7 @@ const TextGradient = ({
         <a
           className={`text-transparent !bg-clip-text ${className}`}
           style={{
-            background: `linear-gradient(to bottom right, ${from}, ${to})`,
+            background: `linear-gradient(to right, ${from}, ${to})`,
             backgroundClip: "text",
             ...style,
           }}
@@ -165,7 +169,7 @@ const TextGradient = ({
     <p
       className={`text-transparent !bg-clip-text ${className}`}
       style={{
-        background: `linear-gradient(to bottom right, ${from}, ${to})`,
+        background: `linear-gradient(to right, ${from}, ${to})`,
         backgroundClip: "text",
         ...style,
       }}

@@ -91,3 +91,13 @@
 .children\:transparent * {
   color: transparent !important;
 }
+
+.prose-lg p:first-of-type {
+  font-size: 1em;
+}
+
+.prose-lg p {
+  line-height: 1.6;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
